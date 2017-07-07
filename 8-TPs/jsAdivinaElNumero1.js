@@ -50,7 +50,8 @@ function verificar()
 
           contador = 1 ;
         	 contador++;
-   	document.getElementById("intentos").value= contador;
+   	
+	   document.getElementById("intentos").value= contador;
 
            
 

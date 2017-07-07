@@ -15,14 +15,85 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
+	 numeroSecreto = parseInt(Math.random()*(100-1)+1 );
+
+	 alert(numeroSecreto);
 	
 
 }
 
 function verificar()
 {
-	
-	
+	var numeroIngresado;
+
+	numeroIngresado= parseInt(document.getElementById("numero").value);
+contadorIntentos= 0;
+
+
+
+if (numeroIngresado == numeroSecreto ){
+
+contadorIntentos += 1;
+
+switch (contadorIntentos) {
+	case 1:
+		
+		alert("usted es un psiquico");
+
+		break;
+	case 2:
+		alert("excelente percepcion");
+		break;
+	case 3:
+		alert("esto es suerte!");
+		break;
+		
+	case 4:
+		alert("Excelente tecnica");
+		break;
+	case 5:
+		alert("usted esta en la media");
+		break;
+	case 6:
+		alert("Suerte en el amor!");
+		break;
+	case 7:
+		alert("Suerte en el amor!");
+		break;
+
+	case 8:
+		alert("Suerte en el amor!");
+		break;
+	case 9:
+		alert("Suerte en el amor!");
+		break;
+	case 10:
+		alert("Suerte en el amor!");
+
+			default:
+			break;
+}
+
 
 }
+
+	else{
+		contadorIntentos+= 1;
+
+		document.getElementById("intentos").value = contadorIntentos;
+
+	}
+
+
+	}
+
+
+
+
+
+
+	
+
+
+	
+
