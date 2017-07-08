@@ -11,14 +11,14 @@ Más de 10 intentos: “afortunado en el amor!!”.*/
 
 var numeroSecreto; 
 var contadorIntentos;
-
+contadorIntentos=0;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 numeroSecreto = parseInt(Math.random()*(100-1)+1 );
-
+	 contadorIntentos=0;
 	 alert(numeroSecreto);
-	
+	document.getElementById("intentos").value = contadorIntentos;
 
 }
 
@@ -27,7 +27,7 @@ function verificar()
 	var numeroIngresado;
 
 	numeroIngresado= parseInt(document.getElementById("numero").value);
-contadorIntentos= 0;
+
 
 
 
@@ -71,6 +71,7 @@ switch (contadorIntentos) {
 		alert("Suerte en el amor!");
 
 			default:
+			alert("malissimo");
 			break;
 }
 
@@ -81,7 +82,7 @@ switch (contadorIntentos) {
 		contadorIntentos+= 1;
 
 		document.getElementById("intentos").value = contadorIntentos;
-
+		alert("intenta Otra vez!");
 	}
 
 

@@ -10,7 +10,7 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 var numeroSecreto; 
 var contador;
 
-
+contador=0;
 
 function comenzar()
 {
@@ -34,7 +34,7 @@ function verificar()
   if (numeroIngresado == numeroSecreto){
     
     
-   contador = 1 ;
+   contador = contador + 1 ;
     
     
     document.getElementById("intentos").value= contador;
@@ -48,8 +48,8 @@ function verificar()
         	if (numeroIngresado > numeroSecreto){
           
 
-          contador = 1 ;
-        	 contador++;
+          
+        	 contador = contador + 1;
    	
 	   document.getElementById("intentos").value= contador;
 
@@ -61,7 +61,7 @@ function verificar()
 
          	else{
             
-         	   contador++;
+         	   contador= contador + 1;
     	document.getElementById("intentos").value = contador;
 
 
