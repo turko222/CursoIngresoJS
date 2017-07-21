@@ -54,7 +54,7 @@ function CalcularPrecio ()
                             
                                   }
                                      else {
-                                    document.getElementById("precioDescuento").value = precioDesc
+                                    document.getElementById("precioDescuento").value = precioDesc;
                                          }
                         
                     
@@ -70,7 +70,7 @@ function CalcularPrecio ()
                             
                                   }
                                      else {
-                                    document.getElementById("precioDescuento").value = precioDesc
+                                    document.getElementById("precioDescuento").value = precioDesc;
                                          }
                              }
               
@@ -78,25 +78,27 @@ function CalcularPrecio ()
                break;
 
                case 4:
-                        if (marca == "ArgentinaLuz" || marca== "FelipeLamparas"){
-                            precio = parseInt((cantidadLamparas*35));
-                            porcentaje=parseInt((precio*25)/100);
-                            precioDesc= parseInt(precio - porcentaje);
+                       
+                       
+                        if (marca == "ArgentinaLuz" || marca == "FelipeLamparas"){
+                            precio= parseInt(cantidadLamparas*35);
+                            porcentaje=parseInt(precio*0.25);
+                            precioDesc= parseInt(precio-porcentaje);
                               
-                                    document.getElementById("precioDescuento").value = precioDesc
+                                    document.getElementById("precioDescuento").value = precioDesc;
                                          }
                         
                         else{
                             precio= parseInt((cantidadLamparas*35));
-                            porcentaje= parseInt((precio*20)/100);
-                            precioDesc= parseInt((precio-porcentaje));
+                            porcentaje= parseInt(precio*0.20);
+                            precioDesc= parseInt(precio-porcentaje);
                                
-                                    document.getElementById("precioDescuento").value = precioDesc
+                                    document.getElementById("precioDescuento").value = precioDesc;
                                          }
                             
                                                        
 
-                        
+                        break;
                         
               
               case 3:
@@ -111,7 +113,7 @@ function CalcularPrecio ()
                             
                                   }
                                      else {
-                                    document.getElementById("precioDescuento").value = precioDesc
+                                    document.getElementById("precioDescuento").value = precioDesc;
                                          }
                             
                             
@@ -136,6 +138,8 @@ function CalcularPrecio ()
 
                                 }
                         }
+
+                          break;
 
                     default:
 

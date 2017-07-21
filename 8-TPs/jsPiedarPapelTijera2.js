@@ -4,6 +4,7 @@ var ContadorDeGanadas=0;
 var ContadorDePerdidas=0;
 
 function comenzar()
+
 {
 	//Genero el número RANDOM entre 1 y 3
 	 	numeroSecreto =Math.floor( Math.random()*3)+1;
@@ -26,6 +27,7 @@ function comenzar()
 
 
 }//FIN DE LA FUNCIÓN
+
 function piedra()
 {
 	alert("la maquina selecciono: "+eleccionMaquina);
@@ -37,7 +39,7 @@ function piedra()
 	}
 	else if(eleccionMaquina=="tijera")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
@@ -61,7 +63,7 @@ function papel()
 	}
 	else if(eleccionMaquina=="piedra")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
@@ -82,7 +84,7 @@ function tijera()
 	}
 	else if(eleccionMaquina=="papel")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
